@@ -10,7 +10,8 @@
 #include <windows.h>
 
 
-
+//I am using 3 header files I have created. The Date.h is used to hold a structure for a Date type. The Person.h can be
+//used to use hold details such as name, DOB of a person. The myInterface.h is used as an interface program to receive input from user. 
 
 int main()
 {
@@ -27,7 +28,7 @@ int main()
 	std::cout << getname;
 	
 
-	
+	//A loop to receive a input string from user for name.
 	while ( true)
 	{
 
@@ -45,7 +46,7 @@ int main()
 	}
 
 	
-		
+	// In the below loop the user is to enter a 3 numbers which will be the year, month and date that they want to enter. 	
 	Dateof dtToday;
 	int num1{0}, num2{0}, num3{0};
 		std::cout << getDOB;
@@ -106,7 +107,7 @@ int main()
 			}
 		
 		
-		
+		// Finally the below code displays it.
 		std::cout << "  Hello " << rtnmsg << "\n";
 		rtndate = dtToday.printDate();
 		std::cout << "  Your Lucky Date is " << rtndate << "\n\n\n\n";
@@ -120,11 +121,3 @@ int main()
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
